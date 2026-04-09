@@ -1,3 +1,3 @@
 microcu
 
-microcontroller project of cp2102N
+microcontroller project of teensy 4.0 (mxrt1062)

@@ -4,8 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-path = "src/main.rs"
-name = "main"
+path = "src/blinker/main.rs"
+name = "blinker"
+
+[[bin]]
+path = "src/spi_simple/main.rs"
+name = "spi_simple"
+
+[[bin]]
+path = "src/do_nothing/main.rs"
+name = "do_nothing"
 
 [dependencies]
 rtic = { version = "2", features = ["thumbv7-backend"] }

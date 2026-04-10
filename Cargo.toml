@@ -4,40 +4,41 @@ version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-path = "src/blinker/main.rs"
 name = "blinker"
+path = "src/blinker/main.rs"
 
 [[bin]]
-path = "src/spi_simple/main.rs"
 name = "spi_simple"
+path = "src/spi_simple/main.rs"
 
 [[bin]]
-path = "src/do_nothing/main.rs"
 name = "do_nothing"
+path = "src/do_nothing/main.rs"
 
 [dependencies]
 rtic = { version = "2", features = ["thumbv7-backend"] }
 rtic-monotonics = { version = "1", default-features = false, features = [
-    "cortex-m-systick",
+  "cortex-m-systick",
 ] }
 
 # Remove these if you don't want logging.
 imxrt-log = { version = "0.1", default-features = false, features = [
-    "log",
-    "usbd",
+  "log",
+  "usbd",
 ] }
 log = { version = "0.4", features = [
-    "max_level_debug",
-    "release_max_level_info",
+  "max_level_debug",
+  "release_max_level_info",
 ] }
 
+embedded-hal = "0.2.7"
 teensy4-panic = { version = "0.2", features = ["log"] }
 
 [dependencies.teensy4-bsp]
 version = "0.5"
 features = [
-    # Use the BSP's runtime.
-    "rt",
+  # Use the BSP's runtime.
+  "rt",
 ]
 
 # Don't optimize build dependencies, like proc macros.

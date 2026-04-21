@@ -1,9 +1,4 @@
 //! Simple spi
-//!
-//! pin 11 (lpspi4 SDO) => pin 1 (lpspi3 SDI)
-//! pin 12 (lpspi4 SDI) => pin 26 (lpspi3 SDO)
-//! pin 13 (lpspi4 SCK) => pin 27 (lpspi3 SCK)
-//! pin 10 (lpspi4 CD)  => pin 0 (lpspi3 CS)
 #![no_std]
 #![no_main]
 

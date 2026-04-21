@@ -15,6 +15,10 @@ path = "src/spi_simple/main.rs"
 name = "do_nothing"
 path = "src/do_nothing/main.rs"
 
+[[bin]]
+name = "spi_simple_accel"
+path = "src/spi_simple_accel/main.rs"
+
 [dependencies]
 rtic = { version = "2", features = ["thumbv7-backend"] }
 rtic-monotonics = { version = "1", default-features = false, features = [
